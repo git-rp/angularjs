@@ -9,3 +9,6 @@ ng serve
 
 //Install boot strap
 npm install --save bootstrap@3
+
+//Cli for creating component
+ng generate component servers
