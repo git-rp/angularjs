@@ -12,6 +12,7 @@ export class ServersComponent {
   serverName = 'TestServer';
   userName = 'Bhuvi';
   isUSerEmpty = false;
+  serverCreated = false;
   constructor() {
     setTimeout(() => {
       //alert('hi --' + this.allowNewServer);
@@ -20,6 +21,7 @@ export class ServersComponent {
     }, 2000);
   }
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server was created..' + this.serverName;
   }
   onUpdateServerName(event: Event) {
