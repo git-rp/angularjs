@@ -10,6 +10,8 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = 'No server created...';
   serverName = 'TestServer';
+  userName = 'Bhuvi';
+  isUSerEmpty = false;
   constructor() {
     setTimeout(() => {
       //alert('hi --' + this.allowNewServer);
@@ -22,5 +24,18 @@ export class ServersComponent {
   }
   onUpdateServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+  onUpdateUserName(event: Event) {
+    this.userName = (<HTMLInputElement>event.target).value;
+    // alert(this.userName.length);
+    if (this.userName.length > 0) {
+      this.isUSerEmpty = true;
+    } else {
+      this.isUSerEmpty = false;
+    }
+  }
+  onUserAdd() {
+    this.userName = '';
+    this.isUSerEmpty = false;
   }
 }
