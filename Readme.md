@@ -6,3 +6,6 @@ ng new my my-first-app --no-strict
 
 //to start server
 ng serve
+
+//Install boot strap
+npm install --save bootstrap@3
