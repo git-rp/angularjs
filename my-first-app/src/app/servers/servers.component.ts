@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css'],
 })
-export class ServersComponent {}
+export class ServersComponent {
+  allowNewServer = false;
+  constructor() {
+    setTimeout(() => {
+      //alert('hi --' + this.allowNewServer);
+      this.allowNewServer = true;
+      //alert('hi --' + this.allowNewServer);
+    }, 2000);
+  }
+}
