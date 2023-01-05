@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cockpit.component.css'],
 })
 export class CockpitComponent implements OnInit {
+  @Input() ninjaData: { name: string; belt: string };
   newServerName = '';
   newServerContent = '';
   constructor() {}

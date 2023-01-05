@@ -9,4 +9,8 @@ export class AppComponent {
   serverElements = [{ type: 'server', name: 'Server 1', content: 'Just test' }];
   newServerName = '';
   newServerContent = '';
+  ninja = {
+    name: 'Ryu',
+    belt: 'black',
+  };
 }
