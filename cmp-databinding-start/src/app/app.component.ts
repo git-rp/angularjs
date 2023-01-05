@@ -13,4 +13,10 @@ export class AppComponent {
     name: 'Ryu',
     belt: 'black',
   };
+  yell(e) {
+    alert('i am yelling');
+  }
+  sayHello(user) {
+    alert(user);
+  }
 }

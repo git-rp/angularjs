@@ -11,6 +11,6 @@
   </div>
   <hr />
   <div class="row">
-    <app-home [ninjaData]="ninja"></app-home>
+    <app-home [ninjaData]="ninja" (onYell)="yell($event)"></app-home>
   </div>
 </div>
