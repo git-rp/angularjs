@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
   @Output() onHello = new EventEmitter<{ name: string; age: number }>();
 
   constructor() {}
+  cricketer = {
+    name: 'tend',
+    number: 1,
+  };
 
   ngOnInit(): void {}
   fireYellEvent(e) {
