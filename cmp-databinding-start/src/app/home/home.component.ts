@@ -7,8 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   @Input() ninjaData: { name: string; belt: string };
+  @Input() myCountry: { country: string; state: string; zip: number };
   @Output() onYell = new EventEmitter();
-  @Output() onHello = new EventEmitter();
+  @Output() onHello = new EventEmitter<{ name: string; age: number }>();
+
   constructor() {}
 
   ngOnInit(): void {}

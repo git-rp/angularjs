@@ -1,5 +1,9 @@
 <div class="container">
-  <app-cockpit [ninjaData]="ninja"></app-cockpit>
+  <app-cockpit
+    [ninjaData]="ninja"
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBluePrintAdded($event)"
+  ></app-cockpit>
   <hr />
   <div class="row">
     <div class="col-xs-12">
@@ -11,6 +15,15 @@
   </div>
   <hr />
   <div class="row">
-    <app-home [ninjaData]="ninja" (onYell)="yell($event)"></app-home>
+    <app-home
+      [ninjaData]="ninja"
+      [myCountry]="country"
+      (onYell)="yell($event)"
+      (onHello)="sayHello($event)"
+    ></app-home>
+  </div>
+  <div class="row">
+    <hr />
+    <app-greet-user [userData]="userData"></app-greet-user>
   </div>
 </div>

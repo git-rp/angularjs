@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { HomeComponent } from './home/home.component';
+import { GreetUserComponent } from './greet-user/greet-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CockpitComponent,
     ServerElementComponent,
-    HomeComponent
+    HomeComponent,
+    GreetUserComponent
   ],
   imports: [
     BrowserModule,
