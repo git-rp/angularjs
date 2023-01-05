@@ -1,4 +1,9 @@
 <div class="container">
+  <div class="row">
+    <label for="">@Viewchild directive</label>
+    <app-employee></app-employee>
+  </div>
+  <hr />
   <app-cockpit
     [ninjaData]="ninja"
     (serverCreated)="onServerAdded($event)"
@@ -27,3 +32,4 @@
     <app-greet-user [userData]="userData"></app-greet-user>
   </div>
 </div>
+<hr />

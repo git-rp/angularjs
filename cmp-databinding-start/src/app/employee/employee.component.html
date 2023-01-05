@@ -1,0 +1,16 @@
+<h4>Employee Parent Component</h4>
+<button (click)="increment()">Increment Salary</button>
+<p>&nbsp;</p>
+<button (click)="decrement()">Decrement Salary</button>
+ 
+<p>&nbsp;</p>
+<app-salary></app-salary>
+
+<input #phone placeholder="phone number" />
+
+<!-- lots of other elements -->
+
+<!-- phone refers to the input element; pass its `value` to an event handler -->
+<button type="button" (click)="callPhone(phone.value)">Call</button>
+
+<p>Cell phone is {{ phoneNo }}</p>

@@ -8,6 +8,7 @@ import { SalaryComponent } from '../salary/salary.component';
 })
 export class EmployeeComponent implements OnInit {
   @ViewChild(SalaryComponent) salaryComponent: SalaryComponent;
+  phoneNo: number = 0;
   constructor() {}
   increment() {
     console.log('Salary Incremented');
@@ -17,5 +18,10 @@ export class EmployeeComponent implements OnInit {
     console.log('Salary Decremented');
     this.salaryComponent.salaryDecrement();
   }
+  callPhone(phone: number) {
+    //alert('hi----' + phone);
+    this.phoneNo = phone;
+  }
+
   ngOnInit(): void {}
 }

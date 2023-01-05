@@ -8,6 +8,8 @@ import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { HomeComponent } from './home/home.component';
 import { GreetUserComponent } from './greet-user/greet-user.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { SalaryComponent } from './salary/salary.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { GreetUserComponent } from './greet-user/greet-user.component';
     CockpitComponent,
     ServerElementComponent,
     HomeComponent,
-    GreetUserComponent
+    GreetUserComponent,
+    EmployeeComponent,
+    SalaryComponent
   ],
   imports: [
     BrowserModule,
