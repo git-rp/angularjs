@@ -18,5 +18,10 @@ export class RecipeListComponent {
       'This is Punjabi dish...',
       'https://assets.vogue.in/photos/5e9d6eca28845e0008c7ec70/1:1/w_640,c_limit/kadhi%20pakoda.jpg'
     ),
+    new Recipe(
+      'Shahi Panner',
+      'This is Shahi panner muglai...',
+      'https://assets.vogue.in/photos/5e9d6eca28845e0008c7ec70/1:1/w_640,c_limit/kadhi%20pakoda.jpg'
+    ),
   ];
 }
