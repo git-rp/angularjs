@@ -10,6 +10,8 @@
 </p>
 <!-- 2 way biniding -->
 <input type="text" name="" id="" [(ngModel)]="cricketer.name" />
-<p appBetterHighlighter>{{ cricketer.name }}</p>
+<p appBetterHighlighter [defaultColor]="'yellow'" [highlightColor]="'red'">
+  {{ cricketer.name }}
+</p>
 <p appHighlighGreen>{{ cricketer.number }}</p>
 <ng-content></ng-content>
