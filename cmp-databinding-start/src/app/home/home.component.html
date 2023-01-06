@@ -15,3 +15,10 @@
 </p>
 <p appHighlighGreen>{{ cricketer.number }}</p>
 <ng-content></ng-content>
+
+<div appBetterHighlighter [ngSwitch]="value">
+  <p appBetterHighlighter *ngSwitchCase="5">value is 5</p>
+  <p appBetterHighlighter *ngSwitchCase="10">value is 10</p>
+  <p *ngSwitchCase="100">value is 100</p>
+  <p *ngSwitchDefault>Default value</p>
+</div>

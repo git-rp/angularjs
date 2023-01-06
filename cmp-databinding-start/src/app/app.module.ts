@@ -11,6 +11,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { SalaryComponent } from './salary/salary.component';
 import { HighlighGreenDirective } from './customdirectives/highlightgreen/highligh-green.directive';
 import { BetterHighlighterDirective } from './customdirectives/highlightgreen/better-highlighter.directive';
+import { UnlessDirective } from './customdirectives/unless/unless.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BetterHighlighterDirective } from './customdirectives/highlightgreen/be
     SalaryComponent,
     HighlighGreenDirective,
     BetterHighlighterDirective,
+    UnlessDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, OnChanges {
   @Input() myCountry: { country: string; state: string; zip: number };
   @Output() onYell = new EventEmitter();
   @Output() onHello = new EventEmitter<{ name: string; age: number }>();
-
+  value = 10;
   constructor() {
     console.log('constructor');
   }
