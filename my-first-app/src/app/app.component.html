@@ -1,5 +1,12 @@
 <h3>In App component</h3>
+<button (click)="myAlert()">Alert</button>
+<app-alert
+  [message]="name"
+  *ngIf="error"
+  (closeEvent)="closeAlert()"
+></app-alert>
 <hr />
+
 <app-servers></app-servers>
 <!-- <app-servers></app-servers> -->
 <div app-server></div>
